@@ -1,0 +1,91 @@
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>S13 | Contact
+    </title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <link href="./img/favicon-32x32.png" rel="shortcut icon" type="image/png">
+    <link rel="stylesheet" href="main.css">
+    <script type="application/ld+json">
+     
+      
+    </script>
+    <script defer="" src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
+    <script src="https://www.google.com/recaptcha/api.js" async="" defer=""></script>
+  </head>
+  <body>
+    <nav class="navbar is-transparent is-planner animate-fadeDown">
+      <div class="container">
+        <div class="navbar-brand"><a class="navbar-item" href="/"><img src="./img/apple-touch-icon.png" alt="S13" height="48"></a></div>
+        <div class="navbar-menu" id="navMenu">
+          <div class="navbar-end">
+            <div class="navbar-item">
+              <p class="buttons"><a class="button is-medium tooltip is-tooltip-bottom" data-tooltip="Reset" onclick="document.getElementById('form').reset();"><span class="icon is-small"><i class="fas fa-undo-alt"></i></span></a><a class="button is-medium tooltip is-tooltip-bottom" data-tooltip="Close" href="/"><span class="icon is-small"><i class="fas fa-times"></i></span></a></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <div class="is-form-page animate-fadeUp">
+      <section class="is-white has-text-centered">
+        <div class="container">
+          <div class="columns is-centered">
+            <div class="column is-three-quarters"><img class="avatar" src="https://robohash.org/samad.png">
+              <h1 style="color: purple;" class="title is-spaced is-size-1-desktop is-size-2-tablet is-size-3-mobile">Thanks for taking the time to reach out. How can I help you today?</h1>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="is-white">
+        <div class="container">
+          
+          <form action="/contact" method="POST">
+            <div class="columns is-centered">
+              <div class="column is-half">
+                <div class="field">
+                  <label style="color: purple;" class="label">Name</label>
+                  <div class="control is-expanded">
+                    <input style="color: purple;" class="input is-large" name="name" type="text" required  autofocus>
+                  </div>
+                </div>
+              </div>
+              <div class="column is-half">
+                <div class="field">
+                  <label style="color: purple;" class="label">Email</label>
+                  <div class="control is-expanded">
+                    <input style="color: purple;" class="input is-large" name="email" type="email" required>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="columns is-centered">
+              <div class="column">
+                <div class="field">
+                  <label style="color: purple;" class="label">Message</label>
+                  <div class="control is-expanded">
+                    <textarea style="color: purple;" class="textarea is-large" name="message" rows="5" required></textarea>
+                  </div>
+                </div>
+                
+              </div>
+            </div>
+            <div class="columns is-centered">
+              <div class="column is-one-third">
+                <div class="field">
+                  <div class="control">
+                    <button class="button is-primary is-outlined is-medium is-fullwidth is-rounded" >Submit</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </form>
+        </div>
+      </section>
+    </div>
+    <script src="main-min.js"></script>
+    
+  </body>
+</html>
