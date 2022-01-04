@@ -35,8 +35,8 @@ app.get('/contact',function(req,res){
      let transporter = nodemailer.createTransport({
         service: "gmail",
         auth: {
-            user: process.env.EMAIL_USERNAME,
-            pass: process.env.EMAIL_PASSWORD
+            user: "samadyusuf002@gmail.com",
+            pass: "Samad002"
         }
       });
 
@@ -44,7 +44,7 @@ app.get('/contact',function(req,res){
 
     const mailOptions = {
         from: req.body.email,
-        to: process.env.EMAIL_USERNAME,
+        to: "samadyusuf002@gmail.com",
         subject: `${req.body.name} <${req.body.email}>`,
         text: req.body.message
         
@@ -52,7 +52,8 @@ app.get('/contact',function(req,res){
 
     transporter.sendMail(mailOptions,(error, info) =>{
         if(error){
-            res.sendFile(path.join(__dirname +'/public/success.html'));
+            console.log(error)
+            res.send("something is wrong")
         
         }else{
             
